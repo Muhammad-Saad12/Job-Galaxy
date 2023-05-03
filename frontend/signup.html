@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-n+nOzgQf4J4HKL+vZ8TWlIMXnXPhdPf+2QfhJj1hFZ1z6l5w6J5mj6U/FDpX9Y9MWbS6v1jCfJqyd2G+em4Zw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Sign Up</title>
+    <script
+      src="https://kit.fontawesome.com/39527b6f34.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script></script>
+  </head>
+  <body>
+    <div class="flex justify-center items-center h-screen bg-blue-800">
+      <div class="max-w-md w-full px-6 py-8 rounded-lg shadow-lg bg-white">
+        <h2 class="text-center text-3xl font-serif mb-6">Join Us</h2>
+        <form>
+          <div class="mb-4">
+            <label class="block text-gray-700 font-serif font-bold mb-2" for="name">
+              Name
+            </label>
+            <input
+              class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="name"
+              type="text"
+              placeholder="John Doe"
+            />
+          </div>
+          <div class="mb-4">
+            <label class="block text-gray-700 font-bold font-serif mb-2" for="email">
+              Email
+            </label>
+            <input
+              class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="email"
+              type="email"
+              placeholder="johndoe@example.com"
+            />
+          </div>
+
+          <div class="mb-4">
+            <label class="block text-gray-700 font-bold mb-2 font-serif" for="password">
+              Password
+            </label>
+            <div class="relative">
+              <input
+                class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline pr-10"
+                id="password"
+                type="password"
+                placeholder="********"
+              />
+              <button
+                class="absolute top-0 right-0 h-full w-10 text-gray-700 text-center transition-colors duration-200 focus:outline-none hover:bg-gray-200"
+                type="button"
+                onclick="togglePasswordVisibility()"
+              >
+                <i id="show-hide-icon" class="fas fa-eye"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="mb-4 relative">
+            <label class="block text-gray-700 font-bold mb-2 font-serif" for="userType">
+              User Type
+            </label>
+            <div class="relative">
+              <select
+                class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="userType"
+              >
+                <option>student</option>
+                <option>employer</option>
+                <option>placement officer</option>
+              </select>
+              <div
+                class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
+              >
+                <i class="fas fa-chevron-down"></i>
+              </div>
+            </div>
+          </div>
+          <div class="mb-4">
+            <label
+              class="block text-gray-700 font-bold font-serif mb-2"
+              for="contactDetails"
+            >
+              Contact Details
+            </label>
+            <textarea
+              class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="contactDetails"
+              placeholder="Enter your contact details"
+            ></textarea>
+          </div>
+          <div class="flex justify-center">
+            <button
+              type="submit"
+              id="sign-up-btn"
+              class="bg-blue-800 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline font-serif"
+              onclick="registerUser()"
+            >
+              Sign Up
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="signup.js"></script>
+  </body>
+</html>

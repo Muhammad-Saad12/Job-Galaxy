@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-n+nOzgQf4J4HKL+vZ8TWlIMXnXPhdPf+2QfhJj1hFZ1z6l5w6J5mj6U/FDpX9Y9MWbS6v1jCfJqyd2G+em4Zw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   
+    <div>
+        <nav class="flex justify-center">
+          <div class="flex grow justify-center">
+            
+            <h1 class="py-5 text-blue-800 font-serif">Job Galaxy</h1>
+          </div>
+  
+          <ul
+            class="px-8 py-4 flex grow space-x-8 justify-center font-serif"
+          >
+            <button
+              class=" px-3 py-2 rounded-2xl font-serif"
+            >
+              Home
+            </button>
+            <button
+              class=" px-3 py-2 rounded-2xl font-serif "
+            >
+              Services
+            </button>
+            <button
+              class=" px-3 py-2 rounded-2xl font-serif"
+            >
+              About Us
+            </button>
+            <button
+              class=" px-3 py-2 rounded-2xl font-serif"
+            >
+              Contact Us
+            </button>
+            
+          </ul>
+          <div class="px-8 py-4 flex grow space-x-8 justify-center">
+           
+           
+            
+          </div>
+        </nav>
+      </div>
+      <!-- hero -->
+      <div class="bg-blue-800 h-screen flex flex-col justify-center items-center">
+        <h1 class="text-4xl text-white text-center mb-8 font-serif">Hire the best developers for your job by trusting us</h1>
+        <button class="bg-white hover:bg-blue-800 hover:text-white text-blue-800 font-bold py-2 px-4 rounded-full font-serif">Post a Job</button>
+      </div>
+    
+      <!-- Form -->
+
+      <div class="flex justify-center items-center h-screen ">
+        <div class="max-w-md w-full px-6 py-8 rounded-lg shadow-lg bg-white">
+          <h2 class="text-center text-3xl font-bold mb-6 font-serif">Hire a coding geek</h2>
+          <form>
+            <div class="mb-4">
+              <label class="block text-gray-700 font-bold mb-2 font-serif" for="jobId ">
+               Job ID
+              </label>
+              <input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="jobId" type="text" placeholder="Binary Works 123">
+            </div>
+            <div class="mb-4">
+              <label class="block text-gray-700 font-bold mb-2 font-serif" for="jobTitle">
+                Job Title
+              </label>
+              <input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="jobTitle" type="jobTitle" placeholder="Senior Software Architect">
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700 font-bold mb-2 font-serif" for="jobTags">
+                  Job Tags
+                </label>
+                <input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="jobTags" type="jobTags" placeholder="Full Time">
+              </div>
+          
+            <div class="mb-4">
+              <label class="block text-gray-700 font-bold mb-2 font-serif" for="jobDescription">
+                Job Description
+              </label>
+              <textarea class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="jobDescription" placeholder="Enter your contact details"></textarea>
+            </div>
+            <div class="flex justify-center">
+              <button type="submit" id="job-post-btn" class="bg-blue-800 font-serif hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"  onclick="">
+                Post Job
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <script src="jobPost.js"></script>
+</body>
+</html>
