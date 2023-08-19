@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
           jobTags,
           jobDescription,
         }),
-      });
+      }); 
   
       const data = await response.json();
   
